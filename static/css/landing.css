@@ -573,13 +573,18 @@ footer {
 }
 
 .team-role {
-    color: var(--accent);
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
 }
 
-/* Supervisor */
+.team-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
 .team-supervisor {
     margin-top: 4rem;
     padding: 2rem;
@@ -600,7 +605,6 @@ footer {
     color: var(--text-primary);
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .team-grid {
         grid-template-columns: repeat(2, 1fr);

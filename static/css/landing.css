@@ -128,7 +128,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 5%;
+    padding: 8rem 5% 6rem;
     position: relative;
 }
 
@@ -149,7 +149,7 @@ body {
     font-size: 0.85rem;
     letter-spacing: 4px;
     color: var(--accent);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-weight: 600;
 }
 
@@ -158,20 +158,20 @@ body {
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -3px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .subtitle {
     font-size: 1.25rem;
     color: var(--text-secondary);
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
     max-width: 650px;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .btn-primary {

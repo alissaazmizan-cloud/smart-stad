@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART STAD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SMART STAD</div>
+        <div class="nav-links">
+            <a href="/login">Log in</a>
+            <a href="/signup" class="btn-signup">Sign up</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <p class="label">MONITOR - DETECT - DEFEND</p>
+        <h1>Outsmarting Threats,<br>Automating Defence</h1>
+        <p class="subtitle">SMART STAD is an automated threat detection and prevention system that protects organisations from insider threats and external attacks.</p>
+        
+        <div class="hero-buttons">
+            <a href="/signup" class="btn-primary">Get Started</a>
+            <a href="#features" class="btn-secondary">Learn More ↓</a>
+        </div>
+    </header>
+
+
+        <!-- FEATURE PROMO CARDS -->
+    <section class="features" id="features">
+        
+        <!-- CARD 1 -->
+        <div class="promo-card">
+            <div class="promo-image">
+                <img src="{{ url_for('static', filename='images/feature-monitoring.png') }}" alt="User Activity Monitoring">
+            </div>
+            <div class="promo-content">
+                <h2>Monitor every user activity</h2>
+                <p>Track login times, file access, and command execution in real-time. SMART STAD watches what matters so nothing slips through.</p>
+                <a href="#" class="promo-link">Learn more →</a>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="promo-card">
+            <div class="promo-image">
+                <img src="{{ url_for('static', filename='images/feature-decoy.png') }}" alt="Deception Traps">
+            </div>
+            <div class="promo-content">
+                <h2>Trap attackers with decoys</h2>
+                <p>Deploy fake admin accounts and dummy files that attract intruders. Any interaction immediately flags malicious intent.</p>
+                <a href="#" class="promo-link">Learn more →</a>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="promo-card">
+            <div class="promo-image">
+                <img src="{{ url_for('static', filename='images/feature-ips.png') }}" alt="Automated IPS">
+            </div>
+            <div class="promo-content">
+                <h2>Defend with automated response</h2>
+                <p>When a threat is detected, SMART STAD automatically blocks the IP, terminates the session, and disables the account — no human needed.</p>
+                <a href="#" class="promo-link">Learn more →</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Monitor</h3>
+                <p>The system continuously tracks user activities and decoy interactions.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Detect</h3>
+                <p>Rule-based engine identifies suspicious behaviour and assigns risk scores.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Defend</h3>
+                <p>Automated IPS blocks threats and sends alerts to administrators.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>SMART STAD | Group 5 | CBS/24/18B</p>
+    </footer>
+
+</body>
+</html>

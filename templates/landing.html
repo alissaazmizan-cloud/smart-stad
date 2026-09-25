@@ -29,46 +29,6 @@
     </div>
 </header>
 
-    <!-- FEATURE PROMO CARDS -->
-    <section class="features" id="features">
-        
-        <!-- CARD 1 -->
-        <div class="promo-card">
-            <div class="promo-image">
-                <img src="{{ url_for('static', filename='images/feature-monitoring.png') }}" alt="User Activity Monitoring">
-            </div>
-            <div class="promo-content">
-                <h2>Monitor every user activity</h2>
-                <p>Track login times, file access, and command execution in real-time. SMART STAD watches what matters so nothing slips through.</p>
-                <a href="#" class="promo-link">Learn more →</a>
-            </div>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="promo-card">
-            <div class="promo-image">
-                <img src="{{ url_for('static', filename='images/feature-decoy.png') }}" alt="Deception Traps">
-            </div>
-            <div class="promo-content">
-                <h2>Trap attackers with decoys</h2>
-                <p>Deploy fake admin accounts and dummy files that attract intruders. Any interaction immediately flags malicious intent.</p>
-                <a href="#" class="promo-link">Learn more →</a>
-            </div>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="promo-card">
-            <div class="promo-image">
-                <img src="{{ url_for('static', filename='images/feature-ips.png') }}" alt="Automated IPS">
-            </div>
-            <div class="promo-content">
-                <h2>Defend with automated response</h2>
-                <p>When a threat is detected, SMART STAD automatically blocks the IP, terminates the session, and disables the account — no human needed.</p>
-                <a href="#" class="promo-link">Learn more →</a>
-            </div>
-        </div>
-
-    </section>
 
        <!-- DASHBOARD PREVIEW -->
     <section class="dashboard-preview">
@@ -80,7 +40,63 @@
         </div>
     </section>
 
-    <!-- HOW IT WORKS --> 
+        <!-- FEATURE BLOCKS -->
+    <section class="feature-blocks">
+
+        <!-- BLOCK 1: MONITORING -->
+        <div class="feature-block">
+            <div class="feature-block-image">
+                <img src="{{ url_for('static', filename='images/feature-monitoring.png') }}" alt="User Activity Monitoring">
+            </div>
+            <div class="feature-block-content">
+                <p class="feature-label">MONITORING</p>
+                <h2>See every login, file, and command.</h2>
+                <p>Track user activities in real time — login times, file access, command execution, and application usage. Nothing slips through.</p>
+                <a href="#" class="feature-link">Learn more →</a>
+            </div>
+        </div>
+
+        <!-- BLOCK 2: DECEPTION -->
+        <div class="feature-block">
+            <div class="feature-block-image">
+                <img src="{{ url_for('static', filename='images/feature-decoy.png') }}" alt="Deception Traps">
+            </div>
+            <div class="feature-block-content">
+                <p class="feature-label">DECEPTION</p>
+                <h2>Trap attackers before they reach real data.</h2>
+                <p>Deploy fake admin accounts and dummy files that look valuable. Any interaction instantly flags malicious intent.</p>
+                <a href="#" class="feature-link">Learn more →</a>
+            </div>
+        </div>
+
+        <!-- BLOCK 3: DETECTION -->
+        <div class="feature-block">
+            <div class="feature-block-image">
+                <img src="{{ url_for('static', filename='images/feature-detection.png') }}" alt="Rule-Based Detection">
+            </div>
+            <div class="feature-block-content">
+                <p class="feature-label">DETECTION</p>
+                <h2>Rules that explain every alert.</h2>
+                <p>Rule-based engine evaluates activities against your security policies. Every alert is transparent and traceable to a specific violation.</p>
+                <a href="#" class="feature-link">Learn more →</a>
+            </div>
+        </div>
+
+        <!-- BLOCK 4: RESPONSE -->
+        <div class="feature-block">
+            <div class="feature-block-image">
+                <img src="{{ url_for('static', filename='images/feature-ips.png') }}" alt="Automated Response">
+            </div>
+            <div class="feature-block-content">
+                <p class="feature-label">RESPONSE</p>
+                <h2>Defend automatically. No waiting.</h2>
+                <p>When a threat is detected, SMART STAD blocks the IP, terminates the session, disables the account, and logs the evidence — in seconds.</p>
+                <a href="#" class="feature-link">Learn more →</a>
+            </div>
+        </div>
+
+    </section>
+
     <!-- HOW IT WORKS -->
     <section class="how-it-works">
         <h2 class="section-title">How It Works</h2>

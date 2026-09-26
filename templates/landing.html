@@ -8,7 +8,10 @@
     <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
 </head>
 <body>
-        <div class="scroll-progress"></div>
+    <div class="scroll-progress"></div>
+    <div class="fox-watermark">
+        <img src="{{ url_for('static', filename='images/smart-stad-logo.png') }}" alt="">
+    </div>
 
     <nav class="navbar">
         <div class="logo">
@@ -21,15 +24,17 @@
         </div>
     </nav>
 
-    <header class="hero">
-    <p class="label">MONITOR - DETECT - DEFEND</p>
-    <h1>Stop Threats<br>Before They Strike</h1>
-    <p class="subtitle">SMART STAD detects insider threats and external attacks using behavioural analysis, deception traps, and automated response — all in real time.</p>
+        <header class="hero">
+        <p class="label">MONITOR - DETECT - DEFEND</p>
+        <h1>Your system.<br>Your rules. Your defence.</h1>
+        <p class="subtitle">SMART STAD watches what others miss — insider threats, hidden intruders, and the attacks that slip past firewalls. Detects. Traps. Responds. In seconds.</p>
     
     <div class="hero-buttons">
         <a href="/signup" class="btn-primary">Get Started</a>
         <a href="#features" class="btn-secondary">See Features ↓</a>
     </div>
+
+    <p class="built-by">Built by students at <span>GMI</span> — German-Malaysian Institute</p>
 </header>
 
 
@@ -65,7 +70,7 @@
             </div>
             <div class="feature-block-content">
                 <p class="feature-label">DECEPTION</p>
-                <h2>Trap attackers before they reach real data.</h2>
+                <h2>Attackers walk into our traps.</h2>
                 <p>Deploy fake admin accounts and dummy files that look valuable. Any interaction instantly flags malicious intent.</p>
             </div>
         </div>
@@ -77,7 +82,7 @@
             </div>
             <div class="feature-block-content">
                 <p class="feature-label">DETECTION</p>
-                <h2>Rules that explain every alert.</h2>
+                <h2>No mystery. Every alert explained.</h2>
                 <p>Rule-based engine evaluates activities against your security policies. Every alert is transparent and traceable to a specific violation.</p>
             </div>
         </div>
@@ -89,7 +94,7 @@
             </div>
             <div class="feature-block-content">
                 <p class="feature-label">RESPONSE</p>
-                <h2>Defend automatically. No waiting.</h2>
+                <h2>Caught in seconds.</h2>
                 <p>When a threat is detected, SMART STAD blocks the IP, terminates the session, disables the account, and logs the evidence — in seconds.</p>
             </div>
         </div>
@@ -179,7 +184,7 @@
     <footer>
         <img src="{{ url_for('static', filename='images/smart-stad-logo.png') }}" alt="SMART STAD" height="60" class="footer-logo">
         <p>SMART STAD | CBS/24/18B</p>
+        <p class="signature">— Built with care by Group 5</p>
     </footer>
-
 </body>
 </html>

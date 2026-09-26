@@ -11,7 +11,10 @@
         <div class="scroll-progress"></div>
 
     <nav class="navbar">
-        <div class="logo">SMART STAD</div>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/smart-stad-logo.png') }}" alt="SMART STAD" height="40">
+        </div>
+
         <div class="nav-links">
             <a href="/login">Log in</a>
             <a href="/signup" class="btn-signup">Sign up</a>
@@ -52,7 +55,6 @@
                 <p class="feature-label">MONITORING</p>
                 <h2>See every login, file, and command.</h2>
                 <p>Track user activities in real time — login times, file access, command execution, and application usage. Nothing slips through.</p>
-                <a href="#" class="feature-link">Learn more →</a>
             </div>
         </div>
 
@@ -65,7 +67,6 @@
                 <p class="feature-label">DECEPTION</p>
                 <h2>Trap attackers before they reach real data.</h2>
                 <p>Deploy fake admin accounts and dummy files that look valuable. Any interaction instantly flags malicious intent.</p>
-                <a href="#" class="feature-link">Learn more →</a>
             </div>
         </div>
 
@@ -78,7 +79,6 @@
                 <p class="feature-label">DETECTION</p>
                 <h2>Rules that explain every alert.</h2>
                 <p>Rule-based engine evaluates activities against your security policies. Every alert is transparent and traceable to a specific violation.</p>
-                <a href="#" class="feature-link">Learn more →</a>
             </div>
         </div>
 
@@ -91,7 +91,6 @@
                 <p class="feature-label">RESPONSE</p>
                 <h2>Defend automatically. No waiting.</h2>
                 <p>When a threat is detected, SMART STAD blocks the IP, terminates the session, disables the account, and logs the evidence — in seconds.</p>
-                <a href="#" class="feature-link">Learn more →</a>
             </div>
         </div>
 
@@ -178,7 +177,8 @@
     </section>
 
     <footer>
-        <p>SMART STAD |  CBS/24/18B</p>
+        <img src="{{ url_for('static', filename='images/smart-stad-logo.png') }}" alt="SMART STAD" height="60" class="footer-logo">
+        <p>SMART STAD | CBS/24/18B</p>
     </footer>
 
 </body>

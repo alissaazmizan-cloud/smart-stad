@@ -1,6 +1,3 @@
-// ===========================
-// FADE-IN ON SCROLL
-// ===========================
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -19,9 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// ===========================
-// SCROLL PROGRESS BAR
-// ===========================
 window.addEventListener('scroll', () => {
     const scrollBar = document.querySelector('.scroll-progress');
     if (scrollBar) {
@@ -32,9 +26,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===========================
-// CUSTOM CURSOR GLOW
-// ===========================
 document.addEventListener('DOMContentLoaded', function() {
     const cursor = document.createElement('div');
     cursor.className = 'cursor-glow';

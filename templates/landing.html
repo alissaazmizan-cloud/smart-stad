@@ -37,13 +37,16 @@
 </header>
 
 
-       <!-- DASHBOARD PREVIEW -->
+        <!-- PROJECT VIDEO -->
     <section class="dashboard-preview">
         <h2 class="section-title">See SMART STAD in Action</h2>
-        <p class="section-subtitle">A powerful dashboard for complete visibility.</p>
+        <p class="section-subtitle">Watch how we detect, trap, and defend against insider threats.</p>
 
         <div class="dashboard-image">
-            <img src="{{ url_for('static', filename='images/dashboard-preview.png') }}" alt="SMART STAD Dashboard">
+            <video controls autoplay muted loop playsinline>
+                <source src="{{ url_for('static', filename='videos/smartstad-commercial.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </section>
 
